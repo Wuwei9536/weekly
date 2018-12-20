@@ -2,14 +2,38 @@ import { observable, computed, action } from "mobx";
 import moment from 'moment';
 
 export default class Model {
-  datanull = {
-    content: "你未填写本周的周报"
+  endDate ={
+    thirtyOne:31,
+    thirty:30,
+    twentyEight:28,
+    twentyNine:29,
+    Jan:"1-31",
+    JanDay:31,
+    FebNormal:"2-28",
+    FebNormalDay:28,
+    FebMore:'2-29',
+    FebMoreDay:29,
+    Mar:'3-31',
+    MarDay:31,
+    Apr:'4-30',
+    AprDay:30,
+    May:'5-31',
+    MayDay:31,
+    June:'6-30',
+    JuneDay:30,
+    July:'7-31',
+    JulyDay:31,
+    Aug:'8-31',
+    AugDay:31,
+    Sept:'9-30',
+    SeptDay:30,
+    Oct:'10-31',
+    OctDay:31,
+    Nov:'11-30',
+    NovDay:30,
+    Dec:'12-31',
+    DecDay:31
   }
-
-  dataQ4 = [{
-    month: 12,
-    week: 4
-  }]
 
   data = {
     "weeklyInfo": {
